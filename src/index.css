@@ -1,0 +1,215 @@
+html, body {
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(bg.svg) center no-repeat;
+  background-size: cover !important;
+  background-attachment: fixed;
+  direction: rtl;
+  text-align: right;
+}
+
+.loading{
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: .7s;
+  -moz-transition: .7s;
+  -webkit-transition: .7s;
+  opacity: 1;
+  color: #fff;
+}
+
+.loaded .loading{
+  opacity: 0;
+}
+
+.hideloading .loading{
+  display: none;
+}
+
+.loading .flex{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main{
+  width: 512px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.categorytlist > div{
+  width: 50%;
+  float: right;
+  padding: 10px;
+  position: relative;
+}
+
+.categorytlist > div > a{
+  width: 100%;
+  display: block;
+  background-size: cover;
+}
+
+.categorytlist > div > a,
+.categorytlist > div > a > div{
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+.iconcat{
+  display: block;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.slick-slide > div{
+  padding: 0 5px;
+}
+
+.slick-slide > div a{
+  color: #000;
+  font-weight: 900;
+}
+
+.categorytlist > div:nth-child(1) > a > div,
+.slick-slide:nth-child(1) .iconcat {
+  background: rgba(0, 124, 27, 0.85);
+}
+
+.categorytlist > div:nth-child(2) > a > div ,
+.slick-slide:nth-child(2) .iconcat{
+  background: rgba(143, 0, 0, 0.85);
+}
+
+.categorytlist > div:nth-child(3) > a > div,
+.slick-slide:nth-child(3) .iconcat {
+  background: rgba(0, 111, 139, 0.85);
+}
+
+.categorytlist > div:nth-child(4) > a > div,
+.slick-slide:nth-child(4) .iconcat {
+  background: rgba(143, 0, 112, 0.85);
+}
+
+.jokelist > div{
+  padding: 10px 20px;
+}
+
+.px-20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.back-btn{
+  background: rgb(10, 105, 194);
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.jokelist{
+  margin-top: 20px;
+}
+
+h2 {
+  line-height: 1.25em;
+}
+
+.projectitem,
+.jokelist >  div{
+  display: block;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.7);
+  text-align: center;
+}
+
+.jokelist >  div{
+  padding: 25px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.jokelist >  div a{
+  color: black;
+}
+
+.projectitem img{
+  width: 90%;
+  display: inline-block;
+}
+
+.txt-cntr{
+  text-align: center
+}
+
+.row:before,
+.row:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.forcehide{
+  display: none !important;
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+
+.mt-15 button{
+  margin-left: 5px;
+}
+
+.slick-slider{
+  margin-top: 25px;
+}
+
+.jokecarousselitem img{
+  width: 50%;
+  margin: 0 25% 10px;
+}
+
+.jokecarousselitem .joketitle{
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex.jc-sb{
+  justify-content: space-between;
+}
+
+.flex.jc-c{
+  justify-content: center;
+}
+
+.flex.ai-c{
+  align-items: center;
+}
