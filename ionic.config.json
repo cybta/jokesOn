@@ -1,0 +1,7 @@
+{
+    "name" : "jokesOn",
+    "integration" : {
+        "capacitor" : {}
+    },
+    "type" : "react"
+}
